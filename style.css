@@ -1,0 +1,302 @@
+/* Resetter */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/* Color Properties */
+:root {
+    --color-darker: rgb(48, 48, 48);
+    --color-dark: rgb(64, 64, 64);
+    --color-light: rgb(194, 194, 194);
+    --color-lighter: rgb(255, 255, 255);
+    /* you could add an accent color for CTAs and anchor tags ;-) */
+}
+
+/* Fonts */
+h1,
+h2,
+h3 {
+    color: var(--color-darker);
+    font-family: "Kumar One", serif;
+    max-width: 30ch;
+}
+
+h1 {
+    font-size: 4.209rem;
+    line-height: 5.5rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+}
+
+h3 {
+    font-family: "Open Sans", serif;
+    font-weight: 700;
+    font-size: 1.563rem;
+    line-height: 3rem;
+}
+
+h4 {
+    font-family: "Open Sans";
+    font-size: 1.25rem;
+}
+
+p,
+a {
+    font-family: "Open Sans";
+    color: var(--color-dark);
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    max-width: 90ch;
+}
+
+#info p {
+    padding-bottom: 1.25rem;
+}
+
+/* UI Elements */
+button {
+    display: inline-block;
+    height: 3rem;
+    padding: 1rem 2rem;
+    border: none;
+    font-family: "Roboto";
+    line-height: 1rem;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--color-darker);
+    color: var(--color-lighter);
+}
+
+.light_button {
+    background-color: var(--color-lighter);
+    color: var(--color-darker);
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+    width: 250px;
+    height: 3rem;
+    padding: 1.25rem 1rem;
+    font-size: 1rem;
+    text-align: left;
+    background-color: var(--color-lighter);
+    border-color: var(--color-light);
+    color: var(--color-dark);
+}
+
+/* Menu */
+nav {
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-darker);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: "Kumar One", serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    min-height: 80vh;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--color-dark);
+}
+
+.header_text {
+    width: 40vw;
+    min-width: 300px;
+}
+
+.header_text h1 {
+    color: var(--color-lighter);
+}
+
+.header_text p {
+    color: var(--color-light);
+}
+
+.header_graphics {
+    width: 35vw;
+    height: 35vw;
+    min-width: 300px;
+    min-height: 300px;
+    background-color: var(--color-darker);
+}
+
+/* Sections */
+#intro {
+    display: flex;
+    min-height: 80vh;
+    padding: 0px 15rem;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: var(--color-light);
+}
+
+.intro_text {
+    width: 40vw;
+    min-width: 450px;
+}
+
+.intro_graphics {
+    width: 15vw;
+    height: 15vw;
+    min-width: 150px;
+    min-height: 150px;
+    background-color: var(--color-dark);
+}
+
+#cards {
+    min-height: 80vh;
+    padding: 5rem 2rem;
+}
+
+#card_container {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.card p {
+    margin: 0.8rem 0 0.8rem 0.7rem;
+    font-weight: 200;
+    line-height: 1.1rem;
+    overflow-wrap: break-word;
+    min-width: 0px;
+    max-width: 30ch;
+}
+
+.card img {
+    width: 80%;
+    border-radius: 2rem;
+}
+
+.card .personals {
+    margin-top: -2rem;
+    padding-bottom: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(210, 210, 200, 0.6);
+}
+
+.personals h3 {
+    color: var(--color-darker);
+    margin-left: 0.7rem;
+    /* text-align: center; */
+}
+
+.card .buttons {
+    margin-top: -1.5rem;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card_button_negative {
+    color: var(--color-darker);
+    background-color: rgb(184, 182, 182);
+    font-size: 1rem;
+    width: 4.5rem;
+    height: 2.7rem;
+}
+
+.card_button_positive {
+    color: var(--color-lighter);
+    background-color: var(--color-darker);
+    font-size: 1.2rem;
+    width: 5rem;
+    height: 3rem;
+}
+
+.card input[type="button"] {
+    border-radius: 3rem;
+    margin-top: 0.5rem;
+    border: none;
+    font-family: "Open Sans";
+    transition-duration: 450ms;
+}
+
+.card input[type="button"]:hover {
+    transform: scale(1.2);
+}
+
+.card_mail {
+    font-weight: 400;
+}
+
+#info {
+    display: flex;
+    min-height: 80vh;
+    padding-left: 2rem;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-light);
+}
+
+.info_text {
+    width: 60vw;
+    min-width: 300px;
+}
+
+#contact {
+    display: flex;
+    min-height: 80vh;
+    padding-left: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    padding: 5vh 2rem;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--color-darker);
+    color: var(--color-lighter);
+}
+
+footer h3 {
+    color: var(--color-lighter);
+}
+
+footer a {
+    color: var(--color-light);
+}
+
+footer section {
+    display: flex;
+    max-width: 50vw;
+    align-items: top;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer section div {
+    margin: 0px 1rem 1rem 1rem;
+}
