@@ -10,7 +10,7 @@
     --color-darker: rgb(48, 48, 48);
     --color-dark: rgb(64, 64, 64);
     --color-light: rgb(194, 194, 194);
-    --color-lighter: rgb(255, 255, 255);
+    --color-lighter: rgb(64, 64, 64);
     /* you could add an accent color for CTAs and anchor tags ;-) */
 }
 
@@ -180,7 +180,7 @@ header {
 }
 
 .card p {
-    margin: 0.8rem 0 0.8rem 0.7rem;
+    margin: 0.2rem 0 0.2rem 0.9rem;
     font-weight: 200;
     line-height: 1.1rem;
     overflow-wrap: break-word;
@@ -188,9 +188,19 @@ header {
     max-width: 30ch;
 }
 
+.card p.card_title {
+    margin-top: 0rem;
+}
+
+.card p.card_slogan {
+    margin-top: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+}
+
 .card img {
     width: 80%;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
 }
 
 .card .personals {
@@ -199,13 +209,12 @@ header {
     border-radius: 0.5rem;
     width: 100%;
     height: 100%;
-    background-color: rgba(210, 210, 200, 0.6);
+    background-color: rgba(210, 210, 200, 0.7);
 }
 
 .personals h3 {
     color: var(--color-darker);
     margin-left: 0.7rem;
-    /* text-align: center; */
 }
 
 .card .buttons {
@@ -214,6 +223,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card_button_negative {
@@ -233,15 +243,15 @@ header {
 }
 
 .card input[type="button"] {
-    border-radius: 3rem;
+    border-radius: 2.5rem;
     margin-top: 0.5rem;
     border: none;
     font-family: "Open Sans";
-    transition-duration: 450ms;
+    transition-duration: 350ms;
 }
 
 .card input[type="button"]:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .card_mail {
